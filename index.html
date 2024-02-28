@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="side">
+    </div>
+    <div>
+      <div id="filter">
+        <div class="filter">
+            <label for="continents">Continent filter</label>
+            <select id="continents" name="Continent filter" onchange="get_value()">
+              <option selected value="">--Not selected--</option>
+              <option value="Africa">Africa</option>
+              <option value="Antartica">Antartica</option>
+              <option value="Oceania">Australia</option>
+              <option value="Europe">Europe</option>
+              <option value="Asia">Asia</option>
+              <option value="North America">North America</option>
+              <option value="South America">South America</option>
+            </select>
+        </div>
+      </div>
+      <div id="contry-container"></div>
+      <div class="pagination">
+        <button id="prevBtn" onclick="prevButton()">Prev</button>
+        <button id="NextBtn" onclick="nextButton()">Next</button>
+      </div>
+    </div>  
+    <script src="script.js"></script>
+  </body>
+</html>
