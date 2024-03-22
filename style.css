@@ -20,7 +20,7 @@ button{
 }
 
 .label-top{
-  width: 40%;
+  width: 90px;
 }
 
 .container {
@@ -75,4 +75,40 @@ button{
 }
 .search-container{
   width: 40%;
+}
+
+@media screen and (max-width : 880px) and (min-width : 450px){
+    .top{
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: stretch;
+      flex-wrap: wrap;
+      margin-left: 0  ;
+    }
+    .filter, .view{
+      width: 60vw;
+    }
+    .label-top{
+      width: 20vw;
+    }
+    .search-container{
+      width: 60vw;
+    }
+}
+@media screen and (max-width : 450px) and (min-width : 0px){
+  .top{
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-left: 0;
+  }
+  .filter, .view ,.search-container{
+    width: 250px;
+  }
+  .label-top{
+    width: 90px;
+  }
 }
